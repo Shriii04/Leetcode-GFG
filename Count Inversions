@@ -1,0 +1,14 @@
+#include <bits/stdc++.h> 
+long long getInversions(long long *arr, int n){
+    // Write your code here.
+    long long count=0;
+    for(long long i=0;i<n;i++){
+        long long start = arr[i];
+        for(long long k=i+1;k<n;k++){
+            if(start>arr[k]){
+                count++;
+            }
+        }
+    }
+    return count;
+}
