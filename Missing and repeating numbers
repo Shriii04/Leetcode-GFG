@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+#include <map>
+
+std::pair<int, int> missingAndRepeating(std::vector<int>& arr, int n) {
+    std::map<int, int> m;
+
+    for (auto x : arr) {
+        m[x]++;
+    }
+
+    int sum1 = (n * (n + 1)) / 2;
+    int sum2 = 0;
+    int a = 0, b = 0;
+    for (int i = 1; i <= n; i++) {
+        if (m.find(i) == m.end()) {
+            a = i;  // i is missing
+        }
+        else if (m[i] == 2) {
+            b = i;  // i is repeating
+        }
+    }
+
+    return { a, b };
+}
+
