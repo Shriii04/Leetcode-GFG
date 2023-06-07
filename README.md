@@ -32,6 +32,5 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 2. Find the middle of LinkedList
 3. Merge two sorted Linked Lists
 4. Delete given node in a Linked List : O(1) approach
-5. Add two numbers as LinkedList
-6. Remove N-th node from back of LinkedList
+5. Remove N-th node from back of LinkedList
 
