@@ -22,3 +22,16 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 3. Majority Element (n/3 times)
 4. Search in a 2 D matrix
 
+# Day 4
+1. 2Sum Problem
+2. Longest Consecutive Sequence
+3. Largest Subarray with K sum
+
+# Day 5
+1. Reverse a LinkedList
+2. Find the middle of LinkedList
+3. Merge two sorted Linked Lists
+4. Delete given node in a Linked List : O(1) approach
+5. Add two numbers as LinkedList
+6. Remove N-th node from back of LinkedList
+
