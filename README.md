@@ -20,4 +20,5 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 1. Pow(x, n)
 2. Majority Element (>n/2 times)
 3. Majority Element (n/3 times)
+4. (https://leetcode.com/problems/reverse-pairs/)[Problem 1]
 
