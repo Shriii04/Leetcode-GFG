@@ -24,8 +24,9 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 
 # Day 4
 1. 2Sum Problem
-2. Longest Consecutive Sequence
-3. Largest Subarray with K sum
+2. 4-Sum Problem
+3. Longest Consecutive Sequence
+4. Largest Subarray with K sum
 
 # Day 5
 1. Reverse a LinkedList
@@ -33,4 +34,6 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 3. Merge two sorted Linked Lists
 4. Delete given node in a Linked List : O(1) approach
 5. Remove N-th node from back of LinkedList
+
+# Day 6
 
