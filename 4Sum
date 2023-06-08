@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#include <string>
+using namespace std;
+
+string fourSum(vector<int> nums, int target, int n) {
+    // Write your code here.
+    vector<int> sortedNums(nums); 
+    sort(sortedNums.begin(), sortedNums.end());
+
+    for (int i = 0; i < n - 3; i++) {
+        for (int j = i + 1; j < n - 2; j++) {
+            int left = j + 1;
+            int right = n - 1;
+            while (left < right) {
+                int sum = sortedNums[i] + sortedNums[j] + sortedNums[left] + sortedNums[right];
+                if (sum == target) {
+                    return "Yes";  
+                } else if (sum < target) {
+                    left++;  
+                } else {
+                    right--;  
+                }
+            }
+        }
+    }
+    return "No";
+}
