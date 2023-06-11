@@ -30,11 +30,11 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 
 # Day 4
 1. 2Sum Problem
-2. 4-Sum Problem
+2. 4-Sum Problem (*)
 3. Longest Consecutive Sequence
 4. Largest Subarray with K sum
-5. Count number of subarrays with given xor K
-6. Longest Substring without repeat
+5. Count number of subarrays with given xor K (*)
+6. Longest Substring without repeat (*)
 
 # Day 5
 1. Reverse a LinkedList
@@ -47,4 +47,5 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 # Day 6
 1. Detect a cycle in Linked List
 2. Check if a LinkedList is palindrome or not…
-3. 
+3. Starting point of loop in a Linked List
+
