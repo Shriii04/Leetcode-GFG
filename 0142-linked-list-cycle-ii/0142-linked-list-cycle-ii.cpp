@@ -9,15 +9,14 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        ListNode *fast = head, *slow = head;
+        ListNode *fast = head, *slow = head,*entry = head;
         while (fast && fast->next && fast->next->next) {
             slow = slow->next;
             fast = fast->next->next;
             if (slow == fast) {
-                slow = head;
-                while (slow != fast) {
+                while (slow != entry) {
                     slow = slow->next;
-                    fast = fast->next;
+                    entry = entry->next;
                 }
                 return slow;
             }
