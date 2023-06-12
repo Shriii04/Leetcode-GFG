@@ -48,4 +48,16 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 1. Detect a cycle in Linked List
 2. Check if a LinkedList is palindrome or not…
 3. Starting point of loop in a Linked List
+4. Reverse Linked List in groups of Size K (*)
+5. Flattening of a LinkedList (*)
+6. Find intersection point of Y LinkedList (*)
+
+# Day 7
+1. 3 sum
+2. Remove Duplicate from Sorted array
+3. Max consecutive ones
+4. Trapping Rainwater
+5. Rotate a LinkedList
+6. Clone Linked List with Random and Next Pointer
+
 
