@@ -57,7 +57,7 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 2. Remove Duplicate from Sorted array
 3. Max consecutive ones (*)
 4. Trapping Rainwater (*)
-5. Rotate a LinkedList (*)
+5. Rotate a LinkedList 
 6. Clone Linked List with Random and Next Pointer (*)
 
 
