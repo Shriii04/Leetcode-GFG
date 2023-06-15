@@ -1,0 +1,34 @@
+#include <algorithm>
+#include <vector>
+
+struct Activity {
+    int start;
+    int finish;
+};
+
+bool compareActivities(const Activity& a1, const Activity& a2) {
+    return a1.finish < a2.finish;
+}
+
+int maximumActivities(std::vector<int>& start, std::vector<int>& finish) {
+    int n = start.size();
+    std::vector<Activity> activities(n);
+    for (int i = 0; i < n; i++) {
+        activities[i].start = start[i];
+        activities[i].finish = finish[i];
+    }
+
+    std::sort(activities.begin(), activities.end(), compareActivities);
+
+    int count = 1; 
+    int prevFinish = activities[0].finish;
+
+    for (int i = 1; i < n; i++) {
+        if (activities[i].start >= prevFinish) {
+            count++;
+            prevFinish = activities[i].finish;
+        }
+    }
+
+    return count;
+}
