@@ -60,4 +60,9 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 5. Rotate a LinkedList 
 6. Clone Linked List with Random and Next Pointer (*)
 
+# Day 8
+1. Implement Stack using single Queue
+2. Implement Queue using Stack
+3. Check for Balanced Parentheses
+4. Sort a Stack	
 
