@@ -65,4 +65,5 @@ Link to the challenge : https://takeuforward.org/interviews/strivers-sde-sheet-c
 2. Implement Queue using Stack
 3. Check for Balanced Parentheses
 4. Sort a Stack	
+5. Next Greater Element
 
