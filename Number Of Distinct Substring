@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+int distinctSubstring(string &word) {
+  //  Write your code here.
+  set<string> s;
+  for (int i = 0; i < word.size(); i++){
+      for(int j=1;j<=word.size();j++){
+          s.insert(word.substr(i,j));
+      }
+  }
+  return s.size();
+}
+
