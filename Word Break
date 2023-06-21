@@ -1,0 +1,18 @@
+#include <bits/stdc++.h> 
+bool wordBreak(vector < string > & arr, int n, string & target) {
+    // Write your code here.
+    std::unordered_set<std::string> stringSet(arr.begin(), arr.end());
+    std::vector<bool> dp(target.length() + 1, false);
+    dp[0] = true; // Base case: empty string can be formed
+    
+    for (int i = 1; i <= target.length(); i++) {
+        for (int j = 0; j < i; j++) {
+            if (dp[j] && stringSet.count(target.substr(j, i - j)) > 0) {
+                dp[i] = true;
+                break;
+            }
+        }
+    }
+    
+    return dp[target.length()];
+}
