@@ -1,0 +1,70 @@
+#include <bits/stdc++.h> 
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        next = nullptr;
+    }
+};
+
+class Queue {
+    
+public:
+    Node* fronte;
+    Node* rear;
+    Queue() {
+        // Implement the Constructor
+        fronte = nullptr;
+        rear = nullptr;
+    }
+
+    /*----------------- Public Functions of Queue -----------------*/
+
+    bool isEmpty() {
+        // Implement the isEmpty() function
+        return fronte==nullptr;
+    }
+
+    void enqueue(int data) {
+        // Implement the enqueue() function
+        Node* newnode = new Node(data);
+        if(isEmpty()){
+            fronte = rear = newnode;
+        }
+        else{
+            rear->next = newnode;
+            rear = newnode;
+        }
+        
+    }
+
+    int dequeue() {
+        // Implement the dequeue() function
+        if (isEmpty()) {
+            return -1;
+        }
+
+        Node* temp = fronte;
+        int item = temp->data;
+
+        fronte = fronte->next;
+        if (fronte == nullptr) {
+            rear = nullptr;
+        }
+
+        delete temp;
+        return item;
+    }
+
+    int front() {
+        // Implement the front() function
+        if (isEmpty()) {
+            return -1;
+        }
+
+        return fronte->data;
+    }
+};
