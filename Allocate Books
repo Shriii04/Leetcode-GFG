@@ -1,0 +1,37 @@
+#include <bits/stdc++.h> 
+using namespace std;
+
+bool solve(int n,int m,vector<int>&arr,long long mid){
+	int daycount=1;
+	long long int timecount=0;
+	for(int i=0;i<m;i++){
+		if(timecount+arr[i]<=mid) timecount+=arr[i];
+		else{
+			daycount++;
+			if(daycount>n || arr[i]>mid) return false;
+			else timecount=arr[i];
+		}
+	}
+	return true;
+}
+long long ayushGivesNinjatest(int n, int m, vector<int> time) 
+{	
+	if(n==m) return *max_element(time.begin(),time.end());
+	long long int s = 0;
+    long long int sum = accumulate(time.begin(), time.end(), 0LL);
+
+    long long int e = sum;
+    long long int ans = -1;
+
+    while (s <= e) {
+        long long int mid = s + (e-s) / 2;
+        if (solve(n, m, time, mid)) {
+            ans = mid;
+            e = mid - 1;
+        } else {
+            s = mid + 1;
+        }
+    }
+    return ans;
+	
+}
