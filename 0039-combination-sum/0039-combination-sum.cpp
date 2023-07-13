@@ -1,26 +1,27 @@
 class Solution {
 public:
-    void helper(int idx, vector<int>& candidates, int n, int sum, int target, vector<int>& temp,         vector<vector<int>>& ans) {
-        if (idx == n) {
-            if (sum == target)
-                ans.push_back(temp);
+    void find(int ind,int target,vector<int>&arr,vector<vector<int>>&ans,vector<int>&ds){
+        if(ind==arr.size()){
+            if(target==0){
+                ans.push_back(ds);
+            }
             return;
         }
-        if ((sum + candidates[idx]) <= target) {
-            sum += candidates[idx];
-            temp.push_back(candidates[idx]);
-            helper(idx, candidates, n, sum, target, temp, ans);
-            sum -= candidates[idx];
-            temp.pop_back();
+        //Pick Up the element
+        if(arr[ind]<=target){
+            ds.push_back(arr[ind]);
+            find(ind,target-arr[ind],arr,ans,ds);
+            ds.pop_back();
         }
-        helper(idx+1, candidates, n, sum, target, temp, ans);
+        //Not pick
+        find(ind+1,target,arr,ans,ds);
     }
     
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         int n = candidates.size();
         vector<vector<int>> ans;
         vector<int> temp;
-        helper(0, candidates, n, 0, target, temp, ans);
+        find(0,target,candidates,ans,temp);
         return ans;
     }
 };
